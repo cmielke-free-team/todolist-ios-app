@@ -11,6 +11,9 @@ class TaskManager: NSObject {
     
     var tasks = [task]()
     
+    var myPassword = "trying to trigger a flaw"
+    tasks.append(task(name: "password", desc: myPassword))
+    
     func addTask(name: String, desc: String){
         tasks.append(task(name: name, desc: desc))
     }
